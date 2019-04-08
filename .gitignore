@@ -1,0 +1,5 @@
+.vscode/
+cpp/bin
+erlang/bin
+golang/bin
+java/bin
