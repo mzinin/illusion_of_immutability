@@ -9,8 +9,9 @@ new(IntValue, StrValue, ListValue) ->
 print(Foo) ->
     case Foo of
         {foo, IntValue, StrValue, ListValue} -> 
-            io:format("INT: ~w~nSTRING: ~s~nLIST: ~w~n", [IntValue, StrValue, ListValue]);
+            io:format("INT: ~w~nSTRING: ~s~nLIST: ~w~n",
+                      [IntValue, StrValue, ListValue]);
         _ -> 
-            throw({error, "That is not a foo term"})
+            throw({error, "Not a foo term"})
     end.
 

@@ -9,5 +9,5 @@ new() ->
 get_foo(Api) ->
     case Api of
         {api, Foo} -> Foo;
-        _ -> throw({error, "That is not an api term"})
+        _ -> throw({error, "Not an api term"})
     end.
